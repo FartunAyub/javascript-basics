@@ -20,6 +20,30 @@ console.log("Undefined:", undefinedVar);
 console.log("Object:", objectVar);
 console.log("Symbol:", symbolVar);
 // Part 1: Data Types
+// Part 3: Functions
+
+// 1. Create a function named greet that takes a name parameter and prints a greeting message to the console
+function greet(name) {
+    console.log(`Hello, ${name}! Welcome to the JavaScript Basics Assignment.`);
+}
+// Example usage:
+greet("Alice"); // Output: Hello, Alice! Welcome to the JavaScript Basics Assignment.
+
+// 2. Create a function named sumArray that takes an array of numbers as a parameter and returns the sum of all elements
+function sumArray(arr) {
+    return arr.reduce((accumulator, current) => accumulator + current, 0);
+}
+// Example usage:
+let numbersArray = [1, 2, 3, 4, 5];
+console.log("Sum of Array:", sumArray(numbersArray)); // Output: 15
+
+// 3. Create a function named findMax that takes an array of numbers as a parameter and returns the maximum number
+function findMax(arr) {
+    return Math.max(...arr);
+}
+// Example usage:
+let numbersArray2 = [1, 2, 3, 4, 5];
+console.log("Maximum Number:", findMax(numbersArray2)); // Output: 5
 
 // 1. Create variables of different data types
 let stringVar = "This is a string"; // String
